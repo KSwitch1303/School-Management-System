@@ -6,7 +6,7 @@ const studentSchema = new mongoose.Schema({
         required: true
     },
     rollNum: {
-        type: Number,
+        type: String,
         required: true
     },
     password: {
@@ -26,6 +26,30 @@ const studentSchema = new mongoose.Schema({
     role: {
         type: String,
         default: "Student"
+    },
+    dob: {
+        type: Date,
+        required: true
+    },
+    gender: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    address: {
+        type: String,
+        required: true
+    },
+    phoneNumber: {
+        type: String,
+        required: true
+    },
+    emergencyContact: {
+        type: String,
+        required: true
     },
     examResult: [
         {
