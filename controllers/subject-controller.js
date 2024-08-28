@@ -8,6 +8,8 @@ const subjectCreate = async (req, res) => {
             subName: subject.subName,
             subCode: subject.subCode,
             sessions: subject.sessions,
+            semester: subject.semester,
+            unit: subject.unit,
         }));
 
         const existingSubjectBySubCode = await Subject.findOne({

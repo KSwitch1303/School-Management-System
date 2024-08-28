@@ -18,6 +18,14 @@ const subjectSchema = new mongoose.Schema({
         ref: 'sclass',
         required: true,
     },
+    semester: {
+        type: String,
+        required: true,
+    },
+    unit : {
+        type: String,
+        required: true,
+    },
     school: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'admin'

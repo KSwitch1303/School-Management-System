@@ -20,7 +20,6 @@ const adminSchema = new mongoose.Schema({
     },
     schoolName: {
         type: String,
-        unique: true,
         required: true
     }
 });
